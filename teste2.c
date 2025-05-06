@@ -21,6 +21,8 @@ int main() {
     return 0;
 }
 
+
+//Versão simplificada da matriz
 #include <stdio.h>
  
 int main() {
