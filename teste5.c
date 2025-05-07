@@ -62,7 +62,7 @@ int main() {
     for (int i = 0; i < 3; i++) {      // Loop externo para as linhas
         for (int j = 0; j < 3; j++) {  // Loop interno para as colunas
             if (matriz[i][j] == target) {
-                printf("Elemento %d encontrado na posição (%d, %d)\n", target, i, j);
+                printf("Elemento %d encontrado na índice (%d, %d)\n", target, i, j);
                 found = 1;
                 break;
             }

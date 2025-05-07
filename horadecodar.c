@@ -1,25 +1,39 @@
 #include <stdio.h>
 
-#define LINHAS 25
-#define COLUNAS 25
+#define LINHA 3
+#define COLUNA 3
 
-int main() {
+int main () {
 
-    int matriz [LINHAS][COLUNAS];
+    int matriz[LINHA][COLUNA];
+    int target = 9;
+    int found = 0;
+    int soma = 1;
 
-    int soma = 0;
-
-    for (int i = 0; i < LINHAS; i++){
-        for (int j = 0; j < COLUNAS; j++){
-
-            soma++;
+    for (int i = 0; i < LINHA; i++) { 
+        for (int j = 0; j < COLUNA; j++) {
             matriz[i][j] = soma;
+            soma++;
             printf("%d ", matriz[i][j]);
+
         }
         printf("\n");
-
     }
-
-
+    // Busca condicional do elemento alvo
+    for (int i = 0; i < LINHA; i++) { 
+        for (int j = 0; j < COLUNA; j++) { 
+            if (matriz[i][j] == target) {
+                printf("Elemento %d encontrado na índice (%d, %d)\n", target, i, j);
+                found = 1;
+                break;
+            }
+        }
+        if (found) break;
+    }
+ 
+    if (!found) {
+        printf("Elemento %d não encontrado na matriz\n", target);
+    }
+ 
     return 0;
 }
