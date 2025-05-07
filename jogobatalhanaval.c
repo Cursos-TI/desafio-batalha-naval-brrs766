@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// Nível Novato - Batalha de Xadrez
+// Nível NOVATO - Batalha de Xadrez
 
 int main() {
 
