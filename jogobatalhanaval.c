@@ -5,7 +5,7 @@
 int main() {
 
     // Inicializando o jogo "Batalha Naval"
-    printf("=== Bem-vindo ao Desafio da Batalha Naval ===\n\n");
+    printf("=== Desafio da Batalha Naval ===\n\n");
     printf("0 = Água\n");
     printf("3 = Navio\n\n");
 
@@ -52,8 +52,8 @@ int main() {
     }
 
     // Exibir as posições dos navios no tabuleiro
-    printf("\nNAVIO 1 ESTÁ NA COLUNA H; POSIÇÕES 4, 5 & 6.\n");
-    printf("NAVIO 2 ESTÁ NA LINHA 6; POSIÇÕES C, D & E.\n");
+    printf("\nNAVIO 1 ESTÁ NAS POSIÇÕES (HORIZONTAL): C6, D6 & E6.\n");
+    printf("NAVIO 2 ESTÁ NAS POSIÇÕES (VERTICAL): H4, H5 & H6.\n");
 
 
     return 0;

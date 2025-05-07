@@ -6,7 +6,7 @@
 #define NAVIOS 3
 
 int main() {
-    printf("=== Bem-vindo ao Desafio da Batalha Naval ===\n\n");
+    printf("=== Desafio da Batalha Naval ===\n\n");
     printf("0 = Água\n");
     printf("3 = Navio\n\n");
 
@@ -43,7 +43,7 @@ int main() {
         }
     }
 
-    // Colocar o navio3 diagonalmente (linhas 6, 7 e 8; coluna 6, 7 e 8)
+    // Colocar o navio4 diagonalmente (linhas 6, 7 e 8; coluna 6, 7 e 8)
     for (i = 6; i == 6; i++) {
         for (j = 8; j == 8; j++) {
             tabuleiro[i][j] = NAVIOS;
