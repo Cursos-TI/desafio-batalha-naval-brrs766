@@ -1,23 +1,25 @@
 #include <stdio.h>
 
+#define LINHAS 25
+#define COLUNAS 25
+
 int main() {
 
-    int index;
+    int matriz [LINHAS][COLUNAS];
 
-    char * nomeAlunos [3][3] = {
-        {"Aluno 0", "Pt: 30", "Mat: 90"},
-        {"Aluno 1", "Pt: 60", "Mat: 60"},
-        {"Aluno 2", "Pt: 90", "Mat: 30"}
-    };
+    int soma = 0;
 
-    printf("Digite o número do aluno que queira ver as notas: \n");
-    printf("\nPara o aluno 0, digite 0.\n");
-    printf("Para o aluno 1, digite 1.\n");
-    printf("Para o aluno 2, digite 2.\n");
+    for (int i = 0; i < LINHAS; i++){
+        for (int j = 0; j < COLUNAS; j++){
 
-    scanf("%d", &index);
+            soma++;
+            matriz[i][j] = soma;
+            printf("%d ", matriz[i][j]);
+        }
+        printf("\n");
 
-    printf("As notas do %s são: %s e %s", nomeAlunos[index][0], nomeAlunos[index][1], nomeAlunos[index][2]);
-    
+    }
+
+
     return 0;
 }
